@@ -1,1 +1,1 @@
-alert("heyy user")
+document.addEventListener( "click", b)
