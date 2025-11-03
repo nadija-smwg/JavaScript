@@ -8,9 +8,9 @@ function calculateShippingCost(i) {
     let ShippingCost;
 
     if (i <= 10){
-        ShippingCost = 5
+        ShippingCost = standardShippingCost
     }else if (i <= 20){
-        ShippingCost = 3
+        ShippingCost = discountShippingCost
     } else {
         ShippingCost = 0
     }
@@ -20,10 +20,13 @@ function calculateShippingCost(i) {
     
 
 }
-standardShippingCost = 7
 //user start shopping
 TotalPrice = 10
+calculateShippingCost(TotalPrice);
 // more item added to cart
 TotalPrice = 19
 //ready to order
 calculateShippingCost(TotalPrice);
+//add one more
+TotalPrice = 24
+calculateShippingCost(TotalPrice)
